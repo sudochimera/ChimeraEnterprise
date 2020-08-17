@@ -5,7 +5,7 @@
   "autoSelectDaemon": true,
   "minimizeToTray": false,
   "logLevel": "DISABLED",
-  "daemonHost": "3.225.124.85",
+  "daemonHost": "207.148.77.219",
   "daemonPort": 11246,
   "darkMode": true,
   "displayCurrency": "CMRA",
@@ -13,7 +13,7 @@
   "fiatSymbol": "$",
   "symbolLocation": "prefix",
   "fiatDecimals": 2,
-  "autoLockInterval": 60,
+  "autoLockInterval": 15,
   "autoLockEnabled": true,
   "useLocalDaemon": false,
   "daemonLogPath": ""

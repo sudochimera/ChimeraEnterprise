@@ -63,8 +63,8 @@ export default class ImportKey extends Component<Props, State> {
       defaultPath: remote.app.getPath('documents'),
       filters: [
         {
-          name: 'Chimera Wallet File (v0)',
-          extensions: ['wallet']
+          name: 'ChimeraEnterprise Wallet File',
+          extensions: ['cmra']
         }
       ]
     };

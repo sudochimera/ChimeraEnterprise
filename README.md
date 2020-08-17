@@ -1,21 +1,21 @@
 # Proton Wallet
 
-![Download Count](https://img.shields.io/github/downloads/turtlecoin/turtle-wallet-proton/total.svg)
-![Open Issue Count](https://img.shields.io/github/issues/turtlecoin/turtle-wallet-proton)
-![License](https://img.shields.io/github/license/turtlecoin/turtle-wallet-proton)
-![Version](https://img.shields.io/github/v/release/turtlecoin/turtle-wallet-proton)
+![Download Count](https://img.shields.io/github/downloads/sudochimera/chimeraenterprise/total.svg)
+![Open Issue Count](https://img.shields.io/github/issues/sudochimera/chimeraenterprise)
+![License](https://img.shields.io/github/license/sudochimera/chimeraenterprise)
+![Version](https://img.shields.io/github/v/release/sudochimera/chimeraenterprise)
 
 ### Master Build Status
 
-![Master Build Status](https://github.com/turtlecoin/turtle-wallet-proton/workflows/Build%20Proton/badge.svg?branch=master)
+![Master Build Status](https://github.com/sudochimera/chimeraenterprise/workflows/Build%20Proton/badge.svg?branch=master)
 
 ### Development Build Status
 
-![Development Build Status](https://github.com/turtlecoin/turtle-wallet-proton/workflows/Build%20Proton/badge.svg?branch=development)
+![Development Build Status](https://github.com/sudochimera/chimeraenterprise/workflows/Build%20Proton/badge.svg?branch=development)
 
-<img src="https://raw.githubusercontent.com/turtlecoin/turtle-wallet-proton/development/screenshots/screenshot.png">
+<img src="https://raw.githubusercontent.com/sudochimera/chimeraenterprise/development/screenshots/screenshot.png">
 <p>
-  Proton Wallet is a TurtleCoin wallet that uses <a href="http://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/turtlecoin/turtlecoin-wallet-backend-js">Turtlecoin-Wallet-Backend-JS</a>, <a href="https://github.com/reactjs/redux">Redux</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="http://webpack.github.io/docs/">Webpack</a> and <a href="https://github.com/gaearon/react-hot-loader">React Hot Loader</a>.
+  Proton Wallet is a Chimera wallet that uses <a href="http://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/turtlecoin/chimerawallet-js">Turtlecoin-Wallet-Backend-JS</a>, <a href="https://github.com/reactjs/redux">Redux</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="http://webpack.github.io/docs/">Webpack</a> and <a href="https://github.com/gaearon/react-hot-loader">React Hot Loader</a>.
 </p>
 
 <p>
@@ -24,7 +24,7 @@
 
 ## Installing
 
-**Check out the full tutorial on how to install and use Proton at the [official TurtleCoin docs page](https://docs.turtlecoin.lol/guides/wallets/using-proton-wallet)!**
+**Check out the full tutorial on how to install and use Proton at the [official Chimera docs page](https://docs.turtlecoin.lol/guides/wallets/using-proton-wallet)!**
 
 ## Development Setup (All Platforms)
 
@@ -45,13 +45,13 @@ Tip: If you already have a different version of node.js installed besides 10.x, 
 First, clone the repo via git:
 
 ```bash
-git clone https://github.com/tylersisia/chimera-wallet-proton.git
+git clone https://github.com/sudochimera/chimeraenterprise.git
 ```
 
 And then install the dependencies with yarn.
 
 ```bash
-$ cd chimera-wallet-proton
+$ cd turtle-wallet-proton
 $ yarn
 ```
 

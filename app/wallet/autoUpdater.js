@@ -18,7 +18,7 @@ export default class AutoUpdater {
       log.debug('Checking for updates...');
       const options = {
         method: 'GET',
-        url: `https://api.getproton.org/latest/${operatingSystem}/${currentVersion}/${arch}`,
+        url: `https://api.chimera.com/latest/${operatingSystem}/${currentVersion}/${arch}`,
         json: true
       };
       request(options, (error, response, body) => {

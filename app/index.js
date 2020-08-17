@@ -28,8 +28,8 @@ import DaemonLogger from './wallet/DaemonLogger';
 const homedir = os.homedir();
 
 export const directories = [
-  `${homedir}/.protonwallet`,
-  `${homedir}/.protonwallet/logs`
+  `${homedir}/.chimerawallet`,
+  `${homedir}/.chimerawallet/logs`
 ];
 
 export const il8n = new LocalizedStrings({
@@ -62,9 +62,9 @@ updater.getLatestVersion();
 
 export const loginCounter = new LoginCounter();
 
-remote.app.setAppUserModelId('wallet.proton.extra');
+remote.app.setAppUserModelId('wallet.chimerawallet');
 
-log.debug(`Proton wallet started...`);
+log.debug(`Chimera Enterprise started...`);
 
 const [programDirectory] = directories;
 
@@ -275,8 +275,8 @@ ipcRenderer.on('handleSaveAs', () => {
     defaultPath: remote.app.getPath('documents'),
     filters: [
       {
-        name: 'Chimera Wallet File (v0)',
-        extensions: ['wallet']
+        name: 'ChimeraEnterprise Wallet File',
+        extensions: ['cmra']
       }
     ]
   };
@@ -347,8 +347,8 @@ function handleOpen() {
     defaultPath: remote.app.getPath('documents'),
     filters: [
       {
-        name: 'Chimera Wallet File (v0)',
-        extensions: ['wallet']
+        name: 'ChimeraEnterprise Wallet File',
+        extensions: ['cmra']
       }
     ]
   };
@@ -434,7 +434,7 @@ ipcRenderer.on('failedDaemonInit', failedDaemonInit);
 
 function handleAbout() {
   remote.shell.openExternal(
-    'http://github.com/tylersisia/chimera-wallet-proton#readme'
+    'http://github.com/sudochimera/chimeraenterprise#readme'
   );
 }
 
@@ -444,7 +444,7 @@ function handleHelp() {
 
 function handleIssues() {
   remote.shell.openExternal(
-    'https://github.com/tylersisia/chimera-wallet-proton/issues'
+    'https://github.com/sudochimera/chimeraenterprise/issues'
   );
 }
 
@@ -493,8 +493,8 @@ export function saveNew(wallet: any, password: string) {
     defaultPath: remote.app.getPath('documents'),
     filters: [
       {
-        name: 'Chimera Wallet File (v0)',
-        extensions: ['wallet']
+        name: 'ChimeraEnterprise Wallet File',
+        extensions: ['cmra']
       }
     ]
   };

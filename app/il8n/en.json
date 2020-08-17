@@ -111,7 +111,7 @@
   "send": "Send",
   "send_all": "Send All",
   "send_to_address": "Send to Address",
-  "send_to_address_input_placeholder": "Enter a TurtleCoin address to send funds to",
+  "send_to_address_input_placeholder": "Enter a Chimera address to send funds to",
   "show_all": "Show all",
   "send_tx_complete_title": "Transaction Complete!",
   "send_tx_complete": "Your transaction has been sent successfully. Transaction hash: ",
@@ -132,5 +132,5 @@
   "unlock": "Unlock",
   "update_required": "Update Required!",
   "wallet": "Wallet",
-  "welcome_to_proton": "Welcome to Proton!"
+  "welcome_to_proton": "Welcome to Chimera Enterprise!"
 }

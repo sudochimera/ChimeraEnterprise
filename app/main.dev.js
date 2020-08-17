@@ -34,8 +34,8 @@ let config = null;
 const homedir = os.homedir();
 
 const directories = [
-  `${homedir}/.protonwallet`,
-  `${homedir}/.protonwallet/logs`
+  `${homedir}/.chimerawallet`,
+  `${homedir}/.chimerawallet/logs`
 ];
 
 const [programDirectory] = directories;
@@ -82,7 +82,7 @@ if (fs.existsSync(`${programDirectory}/addressBook.json`)) {
   fs.writeFileSync(`${programDirectory}/addressBook.json`, '[]');
 }
 
-const daemonLogFile = path.resolve(directories[1], 'TurtleCoind.log');
+const daemonLogFile = path.resolve(directories[1], 'Chimerad.log');
 const backendLogFile = path.resolve(directories[1], 'wallet-backend.log');
 fs.closeSync(fs.openSync(daemonLogFile, 'w'));
 
@@ -172,7 +172,7 @@ contextMenu({
       visible: params.selectionText.trim().length === 64,
       click: () => {
         shell.openExternal(
-          `https://explorer.turtlecoin.lol/?search=${encodeURIComponent(
+          `http://explorer.chimeraproject.io/?search=${encodeURIComponent(
             params.selectionText
           )}`
         );
@@ -213,7 +213,7 @@ app.on('ready', async () => {
   }
 
   mainWindow = new BrowserWindow({
-    title: `Proton v${version}`,
+    title: `Chimera Enterprise | CMRA marketplace currency wallet ${version}`,
     useContentSize: true,
     show: false,
     width: 1250,

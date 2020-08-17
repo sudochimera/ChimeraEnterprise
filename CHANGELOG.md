@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.1.1
+
+- fixes a bug where the "save as" command does not append the .wallet extension
+- fixes a bug where the user could still save the wallet in the install directory by placing it in a subfolder, causing the wallet file to be wiped on wallet upgrade
+- electron-builder updated for MacOS Catalina compatability
+- updates GH builds to use latest OS and cache the dependencies
+- upgrades the wallet backend to alleviate a bug that was (possibly) effecting sending transactions
+- Slight configuration change in an attempt to make the sync process not effect the GUI responsiveness so much
+
 ## v1.1.0
 
 - Adds a new method of making new wallets, which is much more interactive, and ensures the user backs up their seed before they use their wallet.
@@ -10,7 +19,7 @@
 - Fixes a bug that would cause the user to be unable to backup the wallet if it was a non-deterministic wallet.
 - Fixes a but that would allow exporting transactions as CSV when the wallet was locked.
 - Switches the node changer to use the built in swapNode() method.
-- Removes the ability to actually launch the TurtleCoind process, but still allows tailing a log file: I found that actually having Proton launch the child process itself was not the functionality I was really looking for, I was just looking to be able to view my terminal output in Proton for both the daemon and the backend. So, I removed the launching of the process, but it still allows you to set a log file location and view the tail of the text file in the Terminal tab.
+- Removes the ability to actually launch the Chimerad process, but still allows tailing a log file: I found that actually having Proton launch the child process itself was not the functionality I was really looking for, I was just looking to be able to view my terminal output in Proton for both the daemon and the backend. So, I removed the launching of the process, but it still allows you to set a log file location and view the tail of the text file in the Terminal tab.
 - Switches to GitHub actions for push and PR building / release deployment rather than using travis (much faster, windows build is ~6 min compared to almost 30)
 
 ## v1.0.0
@@ -28,13 +37,13 @@
 
 Also, following this release, Proton will be moving to a **monthly release cycle**. We will have a new version out W1 of each month for you to download, so no more of these incredibly frequent update notifications (apologies if they've been bothersome).
 
-Thanks TurtleCoin community, and please enjoy the new version!
+Thanks Chimera community, and please enjoy the new version!
 
 ## v0.0.28
 
 - introduces a non-blocking in-window 'modal' component which replaces all native (thread blocking) dialogs
 - adds a local daemon mode which can be enabled in settings (you must provide a path to turtlecoind)
-- upgrades turtlecoin-wallet-backend for some transaction bugfixes
+- upgrades chimerawallet for some transaction bugfixes
 - adds some additional dev-only testing actions
 - pulls in source code pro for monospace font on all OS
 
@@ -50,7 +59,7 @@ Thanks TurtleCoin community, and please enjoy the new version!
 - ability to disable and configure the time of the autolock (in the settings menu)
 - ability to display transactions in fiat value (click on your balance on the bottom right)
 - completely redesigned settings menu
-- "find node" link updated to the new official TurtleCoin node finder (https://explorer.turtlecoin.lol/nodes.html)
+- "find node" link updated to the new official Chimera node finder (https://explorer.turtlecoin.lol/nodes.html)
 - some various UI improvements
 - updated to latest version of wallet-backend
 - "test" transaction button for developers (sends a transaction between 0.01 - 1.00 with a fee of 0.1 and a random payment ID to the primary wallet addresss)
@@ -85,7 +94,7 @@ This is a pretty big release, cleaning up the codebase and making it look much n
 ## v0.0.23
 
 - finishes rewind feature (before you could only press the button to rewind ~day, i forgot to finish the user input height)
-- bumps turtlecoin-wallet-backend version
+- bumps chimerawallet version
 - fixes AppImage system icon not working
 - now closes to system tray instead of closing completely on X
 
@@ -94,7 +103,7 @@ This is a pretty big release, cleaning up the codebase and making it look much n
 - updated balance widget to include visual difference when some of the balance is locked as well as a mouseover event that shows locked / unlocked bal
 - conditional validation for the transaction dialog box
 - fixes a bug that would cause the historical and balance to be incorrectly displayed when a portion of the balane was locked
-- bumps turtlecoin-wallet-backend
+- bumps chimerawallet
 - fixes the send field allowing negative numbers
 - fixes a bug that would cause the send field to add wrong (eg 1 + 0.1 = 1.11)
 - adds aarmv7 / arm64 support
@@ -117,7 +126,7 @@ This is a pretty big release, cleaning up the codebase and making it look much n
 - sends a native OS notification when you receive a transaction
 - implements an automatic save every few minutes if the wallet is left running
 - windows now has a configurable installer which allows installation in a custom directory or for all users (all users requires administrative permissions)
-- turtlecoin-wallet-backend-js version upgraded, now connects to daemon with KeepAlive = true
+- chimerawallet-js version upgraded, now connects to daemon with KeepAlive = true
 - fixes copy + paste on MacOS
 - various UI improvements
 
@@ -136,7 +145,7 @@ This is a pretty big release, cleaning up the codebase and making it look much n
 
 ## v0.0.15
 
-- bumps turtlecoin-wallet-backend-js dependency to latest version
+- bumps chimerawallet-js dependency to latest version
 - hides the navigation when no wallet is open
 - redirects to the main Wallet page any time after opening a new wallet
 - various bug fixes
@@ -147,7 +156,7 @@ This is a pretty big release, cleaning up the codebase and making it look much n
 
 ## v0.0.13
 
-- upgrade the turtlecoin-wallet-backend dependency to fix a bug that was caused by a batch of blocks in the ~200k range, also no longer checks for an update in development mode
+- upgrade the chimerawallet dependency to fix a bug that was caused by a batch of blocks in the ~200k range, also no longer checks for an update in development mode
 
 ## v0.0.12
 

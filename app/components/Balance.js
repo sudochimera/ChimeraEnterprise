@@ -114,12 +114,12 @@ export default class Balance extends Component<Props, State> {
 
     let balanceTooltip;
 
-    if (session.wallet && displayCurrency === 'TRTL') {
+    if (session.wallet && displayCurrency === 'CMRA') {
       balanceTooltip =
         `Unlocked: ${session.atomicToHuman(unlockedBalance, true)} ${
-          il8n.TRTL
+          il8n.CMRA
         }<br>` +
-        `Locked: ${session.atomicToHuman(lockedBalance, true)} ${il8n.TRTL}`;
+        `Locked: ${session.atomicToHuman(lockedBalance, true)} ${il8n.CMRA}`;
     } else if (
       session.wallet &&
       symbolLocation === 'prefix' &&

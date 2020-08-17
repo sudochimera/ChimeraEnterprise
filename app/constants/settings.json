@@ -14,13 +14,13 @@
   {
     "settingName": "Tail Local Daemon Log File",
     "location": "node",
-    "description": "Show the log output of your local chimerad in the Terminal tab",
+    "description": "Show the log output of your local Chimerad in the Terminal tab",
     "keywords": ""
   },
   {
-    "settingName": "chimerad Log File Location",
+    "settingName": "Chimerad Log File Location",
     "location": "node",
-    "description": "Set the path to the chimerad log",
+    "description": "Set the path to the Chimerad log",
     "keywords": ""
   },
   {

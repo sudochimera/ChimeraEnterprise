@@ -91,7 +91,7 @@ export default class Home extends Component<Props, State> {
     const hash = event.target.value;
 
     remote.shell.openExternal(
-      `https://explorer.turtlecoin.lol/?search=${encodeURIComponent(hash)}`
+      `http://explorer.chimeraproject.io/?hash=${encodeURIComponent(hash)}`
     );
   };
 
@@ -421,13 +421,12 @@ export default class Home extends Component<Props, State> {
               <div className="elem-to-center">
                 <div className={`box ${fillColor}`}>
                   <p className={`${textColor} title has-text-centered`}>
-                    <i className="fas fa-robot" />
-                    &nbsp;&nbsp;Welcome to Proton!
+                    <i className="fas fa-rocket" />
+                    &nbsp;&nbsp;Welcome to Chimera | CMRA!
                   </p>
                   <br />
                   <p className={`${textColor} subtitle has-text-centered`}>
-                    You don&apos;t have any transactions yet. They will display
-                    here once you do.
+                    You don&apos;t have any transactions yet. 
                   </p>
                 </div>
               </div>

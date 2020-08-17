@@ -52,7 +52,7 @@ export default class NodeChanger extends Component<Props, State> {
     );
     this.handleNodeChangeComplete = this.handleNodeChangeComplete.bind(this);
     this.toggleLocalDaemon = this.toggleLocalDaemon.bind(this);
-    this.browseForchimerad = this.browseForchimerad.bind(this);
+    this.browseForChimerad = this.browseForChimerad.bind(this);
   }
 
   componentWillMount() {
@@ -67,7 +67,7 @@ export default class NodeChanger extends Component<Props, State> {
     eventEmitter.off('nodeChangeComplete', this.handleNodeChangeComplete);
   }
 
-  browseForchimerad = () => {
+  browseForChimerad = () => {
     const options = {
       defaultPath: remote.app.getPath('documents')
     };
@@ -113,7 +113,7 @@ export default class NodeChanger extends Component<Props, State> {
   };
 
   findNode = () => {
-    remote.shell.openExternal('https://explorer.turtlecoin.lol/nodes.html');
+    remote.shell.openExternal('http://explorer.chimeraproject.io/#network');
   };
 
   handleNodeInputChange = (event: any) => {
@@ -285,7 +285,7 @@ export default class NodeChanger extends Component<Props, State> {
         <br />
         <br />
         <p className={`has-text-weight-bold ${textColor}`}>
-          chimerad.log file location:
+          Chimerad.log file location:
         </p>
         <div className="field has-addons">
           <div className="control is-expanded">
@@ -299,7 +299,7 @@ export default class NodeChanger extends Component<Props, State> {
           <div className="control">
             <button
               className="button is-warning"
-              onClick={this.browseForchimerad}
+              onClick={this.browseForChimerad}
             >
               <span className="icon is-small">
                 <i className="fas fa-folder-open" />

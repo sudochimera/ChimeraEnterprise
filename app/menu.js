@@ -52,7 +52,7 @@ export default class MenuBuilder {
           label: `${il8n.about} ${productName}`,
           click: () => {
             shell.openExternal(
-              'http://github.com/tylersisia/chimera-wallet-proton#readme'
+              'http://github.com/sudochimera/chimeraenterprise#readme'
             );
           }
         },
@@ -238,14 +238,14 @@ export default class MenuBuilder {
         {
           label: il8n.support,
           click() {
-            shell.openExternal('https://discord.gg/x3md2Nr');
+            shell.openExternal('https://discord.gg/P7urHQs');
           }
         },
         {
           label: il8n.report_bug,
           click() {
             shell.openExternal(
-              'https://github.com/tylersisia/chimera-wallet-proton/issues'
+              'https://github.com/sudochimera/chimeraenterprise/issues'
             );
           }
         },
@@ -253,7 +253,7 @@ export default class MenuBuilder {
           label: il8n.feature_request,
           click() {
             shell.openExternal(
-              'https://github.com/tylersisia/chimera-wallet-proton/issues'
+              'https://github.com/sudochimera/chimeraenterprise/issues'
             );
           }
         }
@@ -458,14 +458,14 @@ export default class MenuBuilder {
           {
             label: il8n.support,
             click: () => {
-              shell.openExternal('https://discord.gg/x3md2Nr');
+              shell.openExternal('https://discord.gg/P7urHQs');
             }
           },
           {
             label: il8n.about,
             click: () => {
               shell.openExternal(
-                'http://github.com/tylersisia/chimera-wallet-proton#readme'
+                'http://github.com/sudochimera/chimeraenterprise#readme'
               );
             }
           },
@@ -473,7 +473,7 @@ export default class MenuBuilder {
             label: il8n.report_bug,
             click: () => {
               shell.openExternal(
-                'https://github.com/tylersisia/chimera-wallet-proton/issues'
+                'https://github.com/sudochimera/chimeraenterprise/issues'
               );
             }
           },
@@ -481,7 +481,7 @@ export default class MenuBuilder {
             label: il8n.feature_request,
             click: () => {
               shell.openExternal(
-                'https://github.com/tylersisia/chimera-wallet-proton/issues'
+                'https://github.com/sudochimera/chimeraenterprise/issues'
               );
             }
           }
